@@ -1,0 +1,108 @@
+body,
+html {
+  position: relative;
+  background-image: url(/images/background-sea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  gap: 5px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.6fr;
+  grid-template-areas: "mainbox1 mainbox2";
+}
+
+.mainbox1 {
+  grid-area: mainbox1;
+  text-align: center;
+  color: black;
+  font-size: 10vh;
+}
+
+.mainbox2 {
+  grid-area: mainbox2;
+  background-image: url(/images/shark.png);
+}
+
+nav {
+  background-color: rgb(39, 68, 80);
+  grid-area: nav;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  grid-area: main;
+}
+
+p {
+  font-size: 10vh;
+  color: rgb(31, 214, 31);
+}
+
+.sidebar {
+  background-color: rgb(29, 85, 109);
+  background-image: url(/images/sealion-tricks.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+  grid-area: sidebar;
+  font-size: 7vh;
+  color: rgb(236, 38, 187);
+  display: grid;
+  text-align: center;
+}
+
+.content1 {
+  background-color: blue;
+  grid-area: content1;
+}
+
+.img {
+  object-fit: scale-down;
+  max-width: 100px;
+  max-height: 50px;
+}
+
+.content2 {
+  background-color: chartreuse;
+  grid-area: content2;
+}
+
+.content3 {
+  background-color: darkcyan;
+  grid-area: content3;
+  display: grid;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(81, 119, 136);
+  grid-area: footer;
+  display: grid;
+  text-align: center;
+}
