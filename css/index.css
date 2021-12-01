@@ -42,6 +42,7 @@ nav {
   background-color: rgb(39, 68, 80);
   grid-area: nav;
   display: flex;
+  justify-content: flex-end;
 }
 
 ul {
