@@ -7,6 +7,7 @@ html {
 }
 
 .grid-container {
+  position: absolute;
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -76,7 +77,6 @@ p {
 }
 
 .sidebar {
-  background-color: rgb(29, 85, 109);
   background-image: url(/images/sealion-tricks.jpg);
   background-repeat: no-repeat;
   background-position: center;
